@@ -1,10 +1,11 @@
 :root {
+    --colour-background: hsl(0, 0%, 98%);
     --colour-red: hsl(0, 78%, 62%);
     --colour-cyan: hsl(180, 62%, 55%);
-    --color-orange: hsl(34, 97%, 64%);
-    --color-blue: hsl(212, 86%, 64%);
+    --colour-orange: hsl(34, 97%, 64%);
+    --colour-blue: hsl(212, 86%, 64%);
     --colour-grey-500: hsl(234, 12%, 34%);
-    --colour-grey-400: hsl(212, 6%, 44%);
+    --colour-grey-400: hsl(210, 6%, 44%);
     --colour-white: hsl(0, 0%, 100%);
 
     --light-font-weight: 200;
@@ -13,9 +14,52 @@
 
     --font-family: 'Poppins', monospace;
 
-    --main-font-size: 15px;
+    --main-font-size: 16px;
+
+    --border-radius: 0.5rem;
 }
 html {
     font-size: var(--main-font-size);
     font-family: var(--font-family);
+    font-weight: var(--regular-font-weight);
+}
+body {
+    background-color: var(--colour-background);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+section {
+    box-sizing: border-box;
+    width: 19.5rem;
+    padding: 2rem;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    border-top: 4px solid transparent;
+    background-color: var(--colour-white);
+}
+h1 {
+    font-weight: var(--light-font-weight);
+    color: var(--colour-grey-400);
+}
+b, h2 {
+    font-weight: var(--semibold-font-weight);
+    color: var(--colour-grey-500);
+}
+p {
+    color: var(--colour-grey-500);
+}
+.section-cyan {
+    border-color: var(--colour-cyan);
+}
+.section-red {
+    border-color: var(--colour-red);
+}
+.section-orange {
+    border-color: var(--colour-orange);
+}
+.section-blue {
+    border-color: var(--colour-blue);
 }
