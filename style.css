@@ -28,6 +28,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    padding-top: 3.5rem;
     
 }
 article {
@@ -44,11 +46,25 @@ main {
 section {
     box-sizing: border-box;
     width: 19.5rem;
+    height: 15.625rem;
     padding: 2rem;
     margin: 0 auto;
     border-radius: var(--border-radius);
     border-top: 4px solid transparent;
     background-color: var(--colour-white);
+}
+footer {
+    font-size: 1rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    width: 20rem;
+    height: 5rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color: var(--colour-white);
+    border-top: 4px solid transparent;
+    border-radius: var(--border-radius);
+    border-color: green;
 }
 img {
     position: relative;
@@ -58,7 +74,7 @@ h1 {
     font-weight: var(--light-font-weight);
     color: var(--colour-grey-400);
     font-size: 1.5rem;
-    margin-bottom: calc(1rem / 6);
+    line-height: 1.4;
 }
 b, h2 {
     font-weight: var(--semibold-font-weight);
@@ -67,12 +83,22 @@ b, h2 {
 b {
     font-size: 1.5rem;
 }
+h2 {
+    font-size: 1.3rem;
+}
 p {
-    color: var(--colour-grey-500);
-    font-size: calc(1rem - 1px);
+    color: var(--colour-grey-400);
+    font-size: 0.875rem;
+    line-height: 1.45;
+    margin-block-start: 0.5rem;
 }
 article p {
+    color: var(--colour-grey-500);
     line-height: 1.35;
+    margin-top: 1.5rem;
+}
+section p {
+    margin-bottom: 2rem;
 }
 .section-cyan {
     border-color: var(--colour-cyan);
