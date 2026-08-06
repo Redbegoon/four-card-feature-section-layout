@@ -53,7 +53,10 @@ section {                       /* Styling box sections*/
     padding: 2rem;
     margin: 0 auto;
     border-radius: var(--border-radius);
-    border-top: 4px solid transparent;
+    border-top: 0.25rem solid transparent;
+
+    box-shadow: 0.0625rem 0.5rem 1.25rem -0.25rem rgba(0, 0, 0, 0.21);                  /* Added approximate box-shadow for box sections */
+    -webkit-box-shadow: 0.0625rem 0.5rem 1.25rem -0.25rem rgba(0, 0, 0, 0.21);
 
     background-color: var(--colour-white);
 }
@@ -63,7 +66,7 @@ footer {                                    /* Styling footer section */
     margin: 0 auto;
     margin-top: 2rem;
     padding: 1.5rem;
-    border-top: 4px solid transparent;
+    border-top: 0.25rem solid transparent;
     border-radius: var(--border-radius);
 
     font-size: 1rem;
