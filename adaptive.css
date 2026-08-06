@@ -1,29 +1,29 @@
-@media only screen and (min-width: 69.7rem) {
+@media only screen and (min-width: 69.7rem) { /* Making adaptive for tablets and computers */
     main {
         width: 69.625rem;
         height: 33.25rem;
         margin: 0 auto;
 
-        display: grid;
-        grid-template-columns: repeat(3, 21.875rem);
+        display: grid;                                  /* Styling main section via*/
+        grid-template-columns: repeat(3, 21.875rem);    /* grid layout */
         grid-template-rows: repeat(4, 6.8125rem);
         gap: 2rem;
     }
-    section {
+    section {               /* Making box sections wider */                    
         width: 21.875rem;
         margin: 0;
     }
-    article {
+    article {               /* Setting bigger values for article seciton */
         width: 32rem;
-        
+
         font-size: 2rem;
     }
 
-    h1, b {
+    h1, b {                 /* Increasing font values */
         font-size: 2rem;
     }
 
-    .section-cyan {
+    .section-cyan {                         /* Setting grid areas for box sections */
         grid-area: 2 / 1 / 4 /3;
     }
     .section-red {
@@ -37,12 +37,12 @@
     }
 }
 
-@media only screen and (max-width: 19.75rem) {
-    article, section, footer {
+@media only screen and (max-width: 19.75rem) { /* Adaptive for very small screens (>316px) */
+    article, section, footer { /* Just applying 100% width for all main elements */
         width: 100%;
         height: auto;
     }
-    img {
+    img {                      /* Removing relative positioning for <img> */
         position: static;
     }
 }

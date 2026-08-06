@@ -1,4 +1,4 @@
-:root {
+:root { /* Declaring some variables to be able to change the values if needed */
     --colour-background: hsl(0, 0%, 98%);
     --colour-red: hsl(0, 78%, 62%);
     --colour-cyan: hsl(180, 62%, 55%);
@@ -14,39 +14,39 @@
 
     --font-family: 'Poppins', monospace;
 
-    --main-font-size: 16px;
+    --main-font-size: 16px;   /* Setting main pixel value */
 
     --border-radius: 0.5rem;
 }
 html {
-    font-size: var(--main-font-size);
-    font-family: var(--font-family);
-    font-weight: var(--regular-font-weight);
+    font-size: var(--main-font-size);           /*  Setting values */
+    font-family: var(--font-family);            /*  to <html> tag */
+    font-weight: var(--regular-font-weight);    /*  so they would be inherited from it */
 }
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    display: flex;                      /* Making main section */
+    flex-direction: column;             /* and footer section */  
+    justify-content: space-around;      /* having a gap beetwen them */
 
     background-color: var(--colour-background);
 
-    padding-top: 3.5rem;
+    padding-top: 3.5rem;                /* Setting top gap so the content not starts from the very top */
     
 }
 article {
-    width: 18.75rem;
-    margin-inline: auto;
+    width: 18.75rem;           /* Styling article */
+    margin-inline: auto;       /* section */
     margin-bottom: 3.5rem;
     text-align: center;
 }
 main {
-    box-sizing: border-box;
-
-    display: flex;
+    box-sizing: border-box;   /* Making main section */
+                              /* flex and changing */
+    display: flex;            /* flex direction */
     flex-direction: column;
     gap: 2rem;
 }
-section {
+section {                       /* Styling box sections*/
     box-sizing: border-box;
     width: 19.5rem;
     height: 15.625rem;
@@ -57,7 +57,7 @@ section {
 
     background-color: var(--colour-white);
 }
-footer {
+footer {                                    /* Styling footer section */
     box-sizing: border-box;
     width: 20rem;
     margin: 0 auto;
@@ -73,17 +73,17 @@ footer {
     background-color: var(--colour-white);
     border-color: green;
 }
-img {
+img {                               /* Making image relative to box section */
     position: relative;
     left: 75%;
 }
 h1 {
-    font-weight: var(--light-font-weight);
+    font-weight: var(--light-font-weight);  /* Setting font parameters to main heading */
     font-size: 1.5rem;
     line-height: 1.4;
     color: var(--colour-grey-400);
 }
-b, h2 {
+b, h2 {                                        /* Joining <h2> and <b> with the same values */
     font-weight: var(--semibold-font-weight);
     color: var(--colour-grey-500);
 }
@@ -105,8 +105,8 @@ a {
 
     color: var(--colour-orange);
 
-    border-bottom: 0.125rem solid transparent;
-    transition: border-color 500ms ease-in 0s;
+    border-bottom: 0.125rem solid transparent;      /* Making transition to <a>*/
+    transition: border-color 500ms ease-in 0s;      /* in the footer section */
 }
 
 article p {
@@ -120,12 +120,12 @@ section p {
 }
 
 a:hover {
-    border-color: var(--colour-orange);
+    border-color: var(--colour-orange);         /* Hover effect to <a> */
 }
 
-.section-cyan {
-    border-color: var(--colour-cyan);
-}
+.section-cyan {                                     /* Styling different */
+    border-color: var(--colour-cyan);               /* border colors of */
+}                                                   /* box sections */
 .section-red {
     border-color: var(--colour-red);
 }
