@@ -24,22 +24,24 @@ html {
     font-weight: var(--regular-font-weight);
 }
 body {
-    background-color: var(--colour-background);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    background-color: var(--colour-background);
 
     padding-top: 3.5rem;
     
 }
 article {
-    text-align: center;
     width: 18.75rem;
     margin-inline: auto;
     margin-bottom: 3.5rem;
+    text-align: center;
 }
 main {
     box-sizing: border-box;
+
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -52,20 +54,23 @@ section {
     margin: 0 auto;
     border-radius: var(--border-radius);
     border-top: 4px solid transparent;
+
     background-color: var(--colour-white);
 }
 footer {
-    font-size: 1rem;
-    padding: 1.5rem;
     box-sizing: border-box;
     width: 20rem;
     margin: 0 auto;
     margin-top: 2rem;
-    line-height: 2;
-    text-align: center;
-    background-color: var(--colour-white);
+    padding: 1.5rem;
     border-top: 4px solid transparent;
     border-radius: var(--border-radius);
+
+    font-size: 1rem;
+    line-height: 2;
+    text-align: center;
+
+    background-color: var(--colour-white);
     border-color: green;
 }
 img {
@@ -74,9 +79,9 @@ img {
 }
 h1 {
     font-weight: var(--light-font-weight);
-    color: var(--colour-grey-400);
     font-size: 1.5rem;
     line-height: 1.4;
+    color: var(--colour-grey-400);
 }
 b, h2 {
     font-weight: var(--semibold-font-weight);
@@ -89,19 +94,35 @@ h2 {
     font-size: 1.3rem;
 }
 p {
-    color: var(--colour-grey-400);
     font-size: 0.875rem;
     line-height: 1.45;
+    color: var(--colour-grey-400);
+
     margin-block-start: 0.5rem;
 }
+a {
+    text-decoration: none;
+
+    color: var(--colour-orange);
+
+    border-bottom: 0.125rem solid transparent;
+    transition: border-color 500ms ease-in 0s;
+}
+
 article p {
-    color: var(--colour-grey-500);
     line-height: 1.35;
+    color: var(--colour-grey-500);
+
     margin-top: 1.5rem;
 }
 section p {
     margin-bottom: 2rem;
 }
+
+a:hover {
+    border-color: var(--colour-orange);
+}
+
 .section-cyan {
     border-color: var(--colour-cyan);
 }
@@ -113,4 +134,14 @@ section p {
 }
 .section-blue {
     border-color: var(--colour-blue);
+}
+
+@media (prefers-reduced-motion: reduce) { /*  Removing any transitions for people who prefers reduced motion */
+  a {
+    transition: none;
+  }
+
+  a:hover {
+    border: none;
+  }
 }

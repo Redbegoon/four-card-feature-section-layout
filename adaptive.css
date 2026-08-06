@@ -2,23 +2,27 @@
     main {
         width: 69.625rem;
         height: 33.25rem;
+        margin: 0 auto;
+
         display: grid;
         grid-template-columns: repeat(3, 21.875rem);
         grid-template-rows: repeat(4, 6.8125rem);
         gap: 2rem;
-        margin: 0 auto;
     }
     section {
-        margin: 0;
         width: 21.875rem;
+        margin: 0;
     }
     article {
         width: 32rem;
+        
         font-size: 2rem;
     }
+
     h1, b {
         font-size: 2rem;
     }
+
     .section-cyan {
         grid-area: 2 / 1 / 4 /3;
     }
@@ -40,6 +44,5 @@
     }
     img {
         position: static;
-        margin: 0 auto;
     }
 }
